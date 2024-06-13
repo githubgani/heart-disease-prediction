@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Heart Disease Prediction</title>
+</head>
+<body>
+    <h1>Heart Disease Prediction</h1>
+    <div class="input-section">
+        <label for="patient-name">Patient Name:</label>
+        <input type="text" id="patient-name" required>
+        
+        <label for="age">Age:</label>
+        <input type="number" id="age" required>
+        
+        <label for="sex">Sex (1 = Male, 0 = Female):</label>
+        <input type="number" id="sex" required>
+        
+        <label for="cp">Chest Pain Type (0-3):</label>
+        <input type="number" id="cp" required>
+        
+        <label for="trestbps">Resting Blood Pressure:</label>
+        <input type="number" id="trestbps" required>
+        
+        <label for="chol">Serum Cholestoral in mg/dl:</label>
+        <input type="number" id="chol" required>
+        
+        <label for="fbs">Fasting Blood Sugar > 120 mg/dl (1 = True; 0 = False):</label>
+        <input type="number" id="fbs" required>
+        
+        <label for="restecg">Resting Electrocardiographic Results (0-2):</label>
+        <input type="number" id="restecg" required>
+        
+        <label for="thalach">Maximum Heart Rate Achieved:</label>
+        <input type="number" id="thalach" required>
+        
+        <label for="exang">Exercise Induced Angina (1 = Yes; 0 = No):</label>
+        <input type="number" id="exang" required>
+        
+        <label for="oldpeak">ST Depression Induced by Exercise Relative to Rest:</label>
+        <input type="number" step="0.01" id="oldpeak" required>
+        
+        <label for="slope">Slope of the Peak Exercise ST Segment (0-2):</label>
+        <input type="number" id="slope" required>
+        
+        <label for="ca">Number of Major Vessels (0-3) Colored by Fluoroscopy:</label>
+        <input type="number" id="ca" required>
+        
+        <label for="thal">Thal (3 = Normal; 6 = Fixed Defect; 7 = Reversible Defect):</label>
+        <input type="number" id="thal" required>
+        
+        <button id="predict-btn">Predict</button>
+    </div>
+    
+    <div class="result-section">
+        <h2>Prediction Result</h2>
+        <p id="prediction-result">Fill in the details above and click Predict.</p>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

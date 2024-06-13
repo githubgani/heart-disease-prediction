@@ -1,0 +1,47 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 20px;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+.input-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.input-section label {
+    width: 45%;
+    margin-bottom: 5px;
+}
+
+.input-section input[type="text"],
+.input-section input[type="number"] {
+    width: 50%;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.input-section button {
+    padding: 10px 20px;
+    background-color: rgb(63, 127, 191);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.result-section {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.result-section p {
+    font-size: 18px;
+}
